@@ -1,0 +1,313 @@
+/* 🌟 Alapstílusok */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fafafa;
+    color: #333;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 25px;
+    background-color: #ffffff;
+    border-bottom: 2px solid #f0f0f0;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.auth-link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.auth-link a {
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-size: 15px;
+}
+
+.login-btn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.logout-btn {
+    background-color: #f44336;
+    color: white;
+}
+
+.auth-link a:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+h1 {
+    color: #555;
+    font-size: 26px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+h2 {
+    color: #333;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 15px;
+}
+
+.left, .right {
+    flex: 1;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    min-width: 300px;
+}
+
+.upload-btn, .delete-btn, .download-btn {
+    cursor: pointer;
+    padding: 8px 12px;
+    border-radius: 8px;
+    text-decoration: none;
+    border: none;
+    font-weight: bold;
+}
+
+.upload-btn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.upload-btn:hover {
+    background-color: #43A047;
+}
+
+.delete-btn {
+    background-color: #e57373;
+    color: white;
+}
+
+.delete-btn:hover {
+    background-color: #ef5350;
+}
+
+.download-btn {
+    background-color: #42a5f5;
+    color: white;
+}
+
+.download-btn:hover {
+    background-color: #1e88e5;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+li {
+    padding: 10px;
+    border-bottom: 1px solid #f0f0f0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.2s ease;
+}
+
+li:hover {
+    background-color: #fafafa;
+}
+
+input[type="file"] {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 6px;
+    width: 100%;
+}
+
+form p {
+    margin-bottom: 12px;
+}
+
+/* 📥 Bejelentkezés / regisztráció */
+.login-container {
+    max-width: 400px;
+    margin: 80px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.login-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: left;
+}
+
+.login-form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.login-form .login-btn {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #4285f4;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.login-form .login-btn:hover {
+    background-color: #357ae8;
+}
+
+/* ❌ Sikertelen belépés */
+.login-fail-container {
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.login-fail-title {
+    font-size: 22px;
+    color: #d32f2f;
+    margin-bottom: 20px;
+}
+
+.try-again-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #d32f2f;
+    color: white;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.try-again-btn:hover {
+    background-color: #b71c1c;
+}
+
+.login-container p a {
+    font-size: 14px;
+    color: #666;
+    text-decoration: none;
+}
+
+.login-container p a:hover {
+    text-decoration: underline;
+    color: #333;
+}
+
+/* 🌙 Sötét mód */
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+body.dark-mode .container,
+body.dark-mode .left,
+body.dark-mode .right,
+body.dark-mode .login-container,
+body.dark-mode .login-fail-container {
+    background-color: #1e1e1e;
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.05);
+}
+
+body.dark-mode a {
+    color: #90caf9;
+}
+
+body.dark-mode .upload-btn {
+    background-color: #388e3c;
+}
+
+body.dark-mode .download-btn {
+    background-color: #1976d2;
+}
+
+body.dark-mode .delete-btn {
+    background-color: #c62828;
+}
+
+body.dark-mode .login-btn {
+    background-color: #2196f3;
+}
+
+body.dark-mode .logout-btn {
+    background-color: #ef5350;
+}
+
+body.dark-mode .login-form input {
+    background-color: #2c2c2c;
+    color: #fff;
+    border: 1px solid #555;
+}
+
+body.dark-mode .header {
+    background-color: #1e1e1e;
+    border-bottom: 1px solid #333;
+}
+
+body.dark-mode h1 {
+    color: #f5f5f5;
+}
+
+/* 🌗 Sötét mód gomb */
+.darkmode-toggle {
+    background-color: #eee;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+body.dark-mode .darkmode-toggle {
+    background-color: #333;
+    color: white;
+}

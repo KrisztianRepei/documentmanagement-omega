@@ -1,0 +1,19 @@
+{
+  "Version": 1,
+  "Hash": "cboZf94bQGPGFq80MCA9/QiFUFJ6+FYSjrlg2rPfNgM=",
+  "Source": ".",
+  "BasePath": "_content/.",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": ".\\wwwroot",
+      "Source": ".",
+      "ContentRoot": "C:\\Users\\krisz\\dokumentumkezelo-fsharp\\wwwroot\\",
+      "BasePath": "_content/.",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": []
+}
