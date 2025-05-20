@@ -78,42 +78,6 @@ h2 {
     min-width: 300px;
 }
 
-.upload-btn, .delete-btn, .download-btn {
-    cursor: pointer;
-    padding: 8px 12px;
-    border-radius: 8px;
-    text-decoration: none;
-    border: none;
-    font-weight: bold;
-}
-
-.upload-btn {
-    background-color: #4CAF50;
-    color: white;
-}
-
-.upload-btn:hover {
-    background-color: #43A047;
-}
-
-.delete-btn {
-    background-color: #e57373;
-    color: white;
-}
-
-.delete-btn:hover {
-    background-color: #ef5350;
-}
-
-.download-btn {
-    background-color: #42a5f5;
-    color: white;
-}
-
-.download-btn:hover {
-    background-color: #1e88e5;
-}
-
 ul {
     padding: 0;
     list-style: none;
@@ -141,6 +105,184 @@ input[type="file"] {
 
 form p {
     margin-bottom: 12px;
+}
+
+/* 🌟 Táblázat stílusok */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    font-size: 15px;
+}
+
+.table thead tr {
+    background-color: #f6f6f6;
+}
+
+.table th, .table td {
+    padding: 12px 14px;
+    text-align: left;
+    border-bottom: 1px solid #ededed;
+}
+
+.table th {
+    font-weight: bold;
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+    transition: background-color 0.2s;
+}
+
+.table th a {
+    color: inherit;
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+.table th:hover, .table th a:hover {
+    background-color: #e8f0fe;
+    color: #1976d2;
+}
+
+.table td {
+    vertical-align: middle;
+}
+
+.table tr:last-child td {
+    border-bottom: none;
+}
+
+.table .download-btn, .table .delete-btn {
+    margin-right: 8px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+/* 📱 Mobil táblázat */
+@media (max-width: 800px) {
+    .table, .table thead, .table tbody, .table th, .table td, .table tr {
+        display: block;
+        width: 100%;
+    }
+    .table thead {
+        display: none;
+    }
+    .table tr {
+        margin-bottom: 15px;
+        border-radius: 8px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.03);
+        background: #fff;
+        padding: 8px 0;
+    }
+    .table td {
+        padding: 8px 16px;
+        text-align: right;
+        position: relative;
+    }
+    .table td:before {
+        content: attr(data-label);
+        position: absolute;
+        left: 16px;
+        width: 50%;
+        padding-right: 10px;
+        font-weight: bold;
+        text-align: left;
+        color: #888;
+        font-size: 13px;
+    }
+}
+
+/* 🌟 Gombok (minden gomb típus, letöltés, törlés, feltöltés stb.) */
+.download-btn, .delete-btn, .upload-btn, .login-btn, .logout-btn, .lang-toggle-btn {
+    display: inline-block;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    padding: 8px 18px;
+    margin: 3px 7px 3px 0;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 
+        background 0.18s, 
+        color 0.15s,
+        box-shadow 0.18s;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+    letter-spacing: 0.03em;
+}
+
+.download-btn {
+    background: linear-gradient(90deg,#2196f3,#42a5f5 70%);
+    color: #fff;
+}
+.download-btn:hover {
+    background: linear-gradient(90deg,#1976d2,#2196f3 80%);
+    color: #e3f2fd;
+    box-shadow: 0 2px 8px rgba(33,150,243,0.15);
+}
+
+.delete-btn {
+    background: linear-gradient(90deg,#ef5350,#e57373 70%);
+    color: #fff;
+}
+.delete-btn:hover {
+    background: linear-gradient(90deg,#b71c1c,#ef5350 80%);
+    color: #ffebee;
+    box-shadow: 0 2px 8px rgba(239,83,80,0.12);
+}
+
+.upload-btn {
+    background: linear-gradient(90deg,#43a047,#66bb6a 70%);
+    color: #fff;
+}
+.upload-btn:hover {
+    background: linear-gradient(90deg,#2e7d32,#43a047 80%);
+    color: #e8f5e9;
+    box-shadow: 0 2px 8px rgba(67,160,71,0.11);
+}
+
+.login-btn {
+    background: linear-gradient(90deg,#1976d2,#64b5f6 70%);
+    color: #fff;
+}
+.login-btn:hover {
+    background: linear-gradient(90deg,#0d47a1,#1976d2 80%);
+    color: #bbdefb;
+    box-shadow: 0 2px 8px rgba(25,118,210,0.12);
+}
+
+.logout-btn {
+    background: linear-gradient(90deg,#d32f2f,#ff7043 70%);
+    color: #fff;
+}
+.logout-btn:hover {
+    background: linear-gradient(90deg,#b71c1c,#d32f2f 80%);
+    color: #ffebee;
+    box-shadow: 0 2px 8px rgba(211,47,47,0.12);
+}
+
+/* 🌍 Nyelvváltó gomb */
+.lang-toggle-btn {
+    background: linear-gradient(90deg,#ffe082,#ffca28 70%);
+    color: #564a0a;
+    border: 1.2px solid #ffd54f;
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: 12px;
+    padding: 7px 18px 7px 14px;
+    box-shadow: 0 1px 4px rgba(255,204,0,0.09);
+}
+.lang-toggle-btn:hover {
+    background: linear-gradient(90deg,#ffd54f,#fffde7 90%);
+    color: #2d2b07;
+    border-color: #ffe082;
+    box-shadow: 0 3px 9px rgba(255,204,0,0.18);
 }
 
 /* 📥 Bejelentkezés / regisztráció */
@@ -242,7 +384,7 @@ form p {
     color: #333;
 }
 
-/* 🌙 Sötét mód */
+/* 🌗 Sötét mód */
 body.dark-mode {
     background-color: #121212;
     color: #e0e0e0;
@@ -296,6 +438,97 @@ body.dark-mode h1 {
     color: #f5f5f5;
 }
 
+body.dark-mode .table {
+    background-color: #202124;
+    color: #e0e0e0;
+    box-shadow: 0 2px 8px rgba(255,255,255,0.03);
+}
+
+body.dark-mode .table thead tr {
+    background-color: #23272f;
+}
+
+body.dark-mode .table th,
+body.dark-mode .table td {
+    border-bottom: 1px solid #323232;
+}
+
+body.dark-mode .table tr:last-child td {
+    border-bottom: none;
+}
+
+body.dark-mode .table th:hover,
+body.dark-mode .table th a:hover {
+    background-color: #333d4b;
+    color: #90caf9;
+}
+
+@media (max-width: 800px) {
+    body.dark-mode .table tr {
+        background: #23272f;
+    }
+    body.dark-mode .table td:before {
+        color: #bbb;
+    }
+}
+
+/* 🌟 Gombok dark mode */
+body.dark-mode .download-btn {
+    background: linear-gradient(90deg,#1976d2,#1565c0 70%);
+    color: #e3f2fd;
+}
+body.dark-mode .download-btn:hover {
+    background: linear-gradient(90deg,#0d47a1,#1976d2 80%);
+    color: #fff;
+}
+
+body.dark-mode .delete-btn {
+    background: linear-gradient(90deg,#b71c1c,#d32f2f 70%);
+    color: #ffebee;
+}
+body.dark-mode .delete-btn:hover {
+    background: linear-gradient(90deg,#7f0000,#b71c1c 80%);
+    color: #fff;
+}
+
+body.dark-mode .upload-btn {
+    background: linear-gradient(90deg,#2e7d32,#388e3c 70%);
+    color: #e8f5e9;
+}
+body.dark-mode .upload-btn:hover {
+    background: linear-gradient(90deg,#1b5e20,#2e7d32 80%);
+    color: #fff;
+}
+
+body.dark-mode .login-btn {
+    background: linear-gradient(90deg,#1565c0,#1976d2 70%);
+    color: #bbdefb;
+}
+body.dark-mode .login-btn:hover {
+    background: linear-gradient(90deg,#0d47a1,#1565c0 80%);
+    color: #fff;
+}
+
+body.dark-mode .logout-btn {
+    background: linear-gradient(90deg,#d84315,#d32f2f 70%);
+    color: #ffccbc;
+}
+body.dark-mode .logout-btn:hover {
+    background: linear-gradient(90deg,#b71c1c,#d84315 80%);
+    color: #fff;
+}
+
+body.dark-mode .lang-toggle-btn {
+    background: linear-gradient(90deg,#fbc02d,#ffe082 80%);
+    color: #564a0a;
+    border-color: #ffe082;
+}
+body.dark-mode .lang-toggle-btn:hover {
+    background: linear-gradient(90deg,#ffd54f,#fffde7 80%);
+    color: #212121;
+    border-color: #ffecb3;
+}
+
 /* 🌗 Sötét mód gomb */
 .darkmode-toggle {
     background-color: #eee;
@@ -305,6 +538,7 @@ body.dark-mode h1 {
     cursor: pointer;
     font-size: 16px;
     transition: background-color 0.3s;
+    margin-right: 8px;
 }
 
 body.dark-mode .darkmode-toggle {

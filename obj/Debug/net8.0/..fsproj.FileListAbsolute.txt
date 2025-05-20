@@ -5,6 +5,7 @@ C:\Users\krisz\dokumentumkezelo-fsharp\obj\Debug\net8.0\..AssemblyInfoInputs.cac
 C:\Users\krisz\dokumentumkezelo-fsharp\obj\Debug\net8.0\..AssemblyInfo.fs
 C:\Users\krisz\dokumentumkezelo-fsharp\obj\Debug\net8.0\..fsproj.CoreCompileInputs.cache
 C:\Users\krisz\dokumentumkezelo-fsharp\obj\Debug\net8.0\..MvcApplicationPartsAssemblyInfo.cache
+C:\Users\krisz\dokumentumkezelo-fsharp\obj\Debug\net8.0\..sourcelink.json
 C:\Users\krisz\dokumentumkezelo-fsharp\bin\Debug\net8.0\WebRoot\main.css
 C:\Users\krisz\dokumentumkezelo-fsharp\bin\Debug\net8.0\..staticwebassets.runtime.json
 C:\Users\krisz\dokumentumkezelo-fsharp\bin\Debug\net8.0\web.config
@@ -19,6 +20,8 @@ C:\Users\krisz\dokumentumkezelo-fsharp\bin\Debug\net8.0\Giraffe.dll
 C:\Users\krisz\dokumentumkezelo-fsharp\bin\Debug\net8.0\Giraffe.ViewEngine.dll
 C:\Users\krisz\dokumentumkezelo-fsharp\bin\Debug\net8.0\Microsoft.IO.RecyclableMemoryStream.dll
 C:\Users\krisz\dokumentumkezelo-fsharp\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\krisz\dokumentumkezelo-fsharp\bin\Debug\net8.0\Ply.dll
+C:\Users\krisz\dokumentumkezelo-fsharp\bin\Debug\net8.0\Utf8Json.dll
 C:\Users\krisz\dokumentumkezelo-fsharp\bin\Debug\net8.0\cs\FSharp.Core.resources.dll
 C:\Users\krisz\dokumentumkezelo-fsharp\bin\Debug\net8.0\de\FSharp.Core.resources.dll
 C:\Users\krisz\dokumentumkezelo-fsharp\bin\Debug\net8.0\es\FSharp.Core.resources.dll
@@ -46,5 +49,3 @@ C:\Users\krisz\dokumentumkezelo-fsharp\obj\Debug\net8.0\refint\..dll
 C:\Users\krisz\dokumentumkezelo-fsharp\obj\Debug\net8.0\..pdb
 C:\Users\krisz\dokumentumkezelo-fsharp\obj\Debug\net8.0\..genruntimeconfig.cache
 C:\Users\krisz\dokumentumkezelo-fsharp\obj\Debug\net8.0\ref\..dll
-C:\Users\krisz\dokumentumkezelo-fsharp\bin\Debug\net8.0\Ply.dll
-C:\Users\krisz\dokumentumkezelo-fsharp\bin\Debug\net8.0\Utf8Json.dll
